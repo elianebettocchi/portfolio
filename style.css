@@ -1,141 +1,115 @@
-body{
-    background-color: #222;
-    color: #ccc;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
     font-family: 'Courier New', Courier, monospace;
-	font-size: 20px;
+    color: #ccc;
 }
-.img-fluid {
-    max-width: 100%;
-    height: auto;
+.justify{
+    text-align: justify;
+}
+.center{
+    text-align: center;
+}
+button {
+    font-size: 100%;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 100%;
+    color: white;
+    border: white solid 1px;
+    background-color: rgb(0,0,0,0.3);
+}
+.navbar-toggler{
+    width: auto;
+}
+.light {
+    font-size: 100%;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 100%;
+    color: white;
+    border: solid grey 1px;
+    background-color: rgb(255,255,255,0.6);
+}
+.dark {
+    font-size: 100%;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 100%;
+    color: white;
+    border: white 0px solid;
+    background-color: rgb(0,0,0,0.3);
+}
+.a-white{
+    color: white;
+}
+
+#masthead{
+    position: relative;
+    top: 10vh;
   }
-  
-.img-thumbnail {
-    padding: 0.25rem;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 0.25rem;
-    max-width: 100%;
-    height: auto;
-  }
-  
-@media (min-width: 576px) {
-    .container-sm, .container {
-      max-width: 540px;
-    }
-  }
-  @media (min-width: 768px) {
-    .container-md, .container-sm, .container {
-      max-width: 720px;
-    }
+  header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: url("./img/lilith.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
   }
   @media (min-width: 992px) {
-    .container-lg, .container-md, .container-sm, .container {
-      max-width: 960px;
+    header.masthead {
+      height: 100vh;
+      min-height: 40rem;
+      padding-top: 4.5rem;
+      padding-bottom: 0;
+    }
+    header.masthead p {
+      font-size: 1.15rem;
+    }
+    header.masthead h1, header.masthead .h1 {
+      font-size: 3rem;
     }
   }
   @media (min-width: 1200px) {
-    .container-xl, .container-lg, .container-md, .container-sm, .container {
-      max-width: 1140px;
+    header.masthead h1, header.masthead .h1 {
+      font-size: 3.5rem;
     }
   }
-  @media (min-width: 1400px) {
-    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-      max-width: 1320px;
-    }
-  }
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-family: 'Courier New', Courier, monospace
-    font-weight: 500;
-    line-height: 1.2;
-  }
-  
-  h1, .h1 {
-    font-size: calc(1.375rem + 1.5vw);
-  }
-  @media (min-width: 1200px) {
-    h1, .h1 {
-      font-size: 2.5rem;
-    }
-  }
-  
-  h2, .h2 {
-    font-size: calc(1.325rem + 0.9vw);
-  }
-  @media (min-width: 1200px) {
-    h2, .h2 {
-      font-size: 2rem;
-    }
-  }
-  
-  h3, .h3 {
-    font-size: calc(1.3rem + 0.6vw);
-  }
-  @media (min-width: 1200px) {
-    h3, .h3 {
-      font-size: 1.75rem;
-    }
-  }
-  
-  h4, .h4 {
-    font-size: calc(1.275rem + 0.3vw);
-  }
-  @media (min-width: 1200px) {
-    h4, .h4 {
-      font-size: 1.5rem;
-    }
-  }
-  
-  h5, .h5 {
-    font-size: 1.25rem;
-  }
-  
-  h6, .h6 {
-    font-size: 1rem;
-  }
-  
-  p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    text-align: justify;
-  }
-  
-.a-red{
-    color: #c00;
+img{
+    width: 100%;
 }
-.a-grey{
-    color: white;
+.img2{
+    width: 90%;
+}
+.card{
+    width: 100%;
+    background-color: black;
+}
+a {
+    color: #c00;
 }
 a:hover{
     color: red;
     text-decoration: none;
 }
-.button{
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    padding: 5px;
-    border-color: white;
-}
 .btn{
-    width: 30px;
-    margin: 2px;
-	padding: 2px;
+    width: auto;
 }
-.nav-link{
+.divider{
     color: #900;
+    width: 25%;
 }
-.card{
-	background-color: rgb(0,0,0,0.7);
+.darkred{
+    background-color: #400;
 }
-.div-black{
-	background-color: black;
+.darkgrey{
+    background-color: #444;
 }
-.div-black-transparent{
-	background-color: rgb(0,0,0,0.7);
-}
-
-hr{
-    color: #900;
+.red{
+    background-color: #900;
 }
