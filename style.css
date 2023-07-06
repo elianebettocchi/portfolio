@@ -93,6 +93,9 @@ img{
 a {
     color: #c00;
 }
+.a-red {
+    color: #900;
+}
 a:hover{
     color: red;
     text-decoration: none;
